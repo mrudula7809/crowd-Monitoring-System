@@ -84,11 +84,11 @@ def section(title):
 class CrowdControlTerminal:
 
     def __init__(self):
-        from step1_core import CrowdManager
-        from step2_ml import CrowdPredictor
-        from step3_flow import FlowOptimizer
-        from step4_db import DatabaseManager
-        from step6_decision_engine import DecisionEngine
+        from core import CrowdManager
+        from ml import CrowdPredictor
+        from flow import FlowOptimizer
+        from db import DatabaseManager
+        from decision_engine import DecisionEngine
 
         self.venue = get_str("Venue / Event Name", "Control Room")
         self.manager = CrowdManager(self.venue)
@@ -130,7 +130,7 @@ class CrowdControlTerminal:
     # [1] ADD / UPDATE ZONE
     # ════════════════════════════════════════
     def _add_update_zone(self):
-        from step1_core import Zone
+        from core import Zone
         section("ADD / UPDATE ZONE")
 
         zone_id = get_str("Zone ID (e.g. Z1)", "").upper()

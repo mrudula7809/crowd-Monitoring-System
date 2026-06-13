@@ -1,5 +1,5 @@
 """
-step6_decision_engine.py — Decision & Suggestion Engine
+decision_engine.py — Decision & Suggestion Engine
 Produces structured, actionable control-room recommendations.
 NOT just "HIGH RISK" — outputs WHAT, WHERE, HOW URGENT.
 """
@@ -7,7 +7,7 @@ NOT just "HIGH RISK" — outputs WHAT, WHERE, HOW URGENT.
 from dataclasses import dataclass, field
 from typing import List, Dict, Optional
 from datetime import datetime
-from step1_core import Zone, CrowdManager, RISK_SAFE, RISK_MODERATE, RISK_HIGH, RISK_CRITICAL
+from core import Zone, CrowdManager, RISK_SAFE, RISK_MODERATE, RISK_HIGH, RISK_CRITICAL
 
 
 # ─────────────────────────────────────────────

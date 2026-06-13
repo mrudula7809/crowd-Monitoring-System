@@ -6,11 +6,11 @@ import streamlit as st
 import time, math
 from datetime import datetime
 
-from step1_core import Zone, CrowdManager
-from step2_ml import CrowdPredictor
-from step3_flow import FlowOptimizer
-from step4_db import DatabaseManager
-from step6_decision_engine import DecisionEngine
+from core import Zone, CrowdManager
+from ml import CrowdPredictor
+from flow import FlowOptimizer
+from db import DatabaseManager
+from decision_engine import DecisionEngine
 
 st.set_page_config(page_title="Crowd Intelligence Control", page_icon="C", layout="wide", initial_sidebar_state="expanded")
 

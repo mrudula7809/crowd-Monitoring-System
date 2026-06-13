@@ -6,7 +6,7 @@ Zones = nodes, corridors/gates = weighted directed edges.
 
 from typing import Dict, List, Tuple, Optional, Set
 from dataclasses import dataclass
-from step1_core import Zone, CrowdManager, RISK_HIGH, RISK_CRITICAL, RISK_SAFE, RISK_MODERATE
+from core import Zone, CrowdManager, RISK_HIGH, RISK_CRITICAL, RISK_SAFE, RISK_MODERATE
 
 
 # ─────────────────────────────────────────────
